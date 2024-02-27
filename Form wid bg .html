@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://t3.ftcdn.net/jpg/04/19/30/72/360_F_419307247_5kxFrbl2sZYHsEGgnKaJ9Fz4bI9qIWME.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Personal information</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+       <br><label>Name :</label>
+        <input type="text" placeholder="Enter your name"></br>
+        <br><label>Dob :</label>
+        <input type="date"></br>
+        <br> <label>Phn no:</label>
+        <input type="number"></br>
+        <br> <label>Gender:</label>
+        <input type="radio" name = "gender"value ="Male">Male
+        <input type="radio" name="gender"value="Female">Female
+    <input type = "radio" name ="gender" value="Other">Other </br>
+    <br><label>Email :</label>
+    <input type="email"></br>
+    <br><label>Languages :</label>
+    <input type="checkbox" value="Tamil">Tamil
+    <input type="checkbox" value="English">English
+    <input type="checkbox" value="Malayalam">Malayalam
+    <input type="checkbox" value="Other">Other</br>
+    <br><label>Department :</label><select>
+        <option name = "Department"value="Ece">Ece</option>
+        <option name = "Department"value="Cse">Cse</option>
+        <option name = "Department"value="It">It</option>
+        <option name = "Department"value="Mech">Mech</option>
+    </select></br>
+
+    <br><input type="submit" value="Submit">
+
+            
+        </form>
+    </div>
+</body>
+</html>
